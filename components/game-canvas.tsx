@@ -504,7 +504,7 @@ export function GameCanvas() {
                               // </span>
 
                               <img
-    src={`/pieces/${p.color}/${p.type}.png`}
+src={`/pieces/${p.color}/${p.type.charAt(0).toUpperCase() + p.type.slice(1)}.png`}
     alt={p.type}
     style={{ width:"100%", height:"100%", objectFit:"contain" }}
   />
